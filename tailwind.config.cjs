@@ -16,6 +16,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         "1-2": "1fr 2fr",
+        "1-3": "1fr 3fr",
       },
       boxShadow: {
         paper: "0 35px 55px rgba(0,0,0,0.1)",

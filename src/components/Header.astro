@@ -1,0 +1,18 @@
+---
+import { info } from "~/content/info";
+---
+
+<header
+  class="mt-20 flex aspect-[4/1] w-full items-center justify-center bg-primary text-white"
+>
+  <div class="flex w-[80%] flex-col justify-start gap-3">
+    <h2
+      class="text-2xl font-bold uppercase leading-[1em] md:text-3xl lg:text-4xl xl:text-[44px]"
+    >
+      {info.name}
+    </h2>
+    <p class="pr-2 font-light uppercase">
+      {info.jobDescription}
+    </p>
+  </div>
+</header>

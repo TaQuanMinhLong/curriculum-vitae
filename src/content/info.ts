@@ -1,15 +1,14 @@
 export const info = {
   name: "Ta Quan Minh Long",
   jobDescription: "Designer - Editor - Web Developer",
-  about: `I've been working as an editor for the L&OD (Learning and Organization Development) department of the HR division of MM Mega Market Vietnam after graduating from the Foreign Trade University in HCMC. As a member of the team, it is my responsibility to manage all aspects of the training materials, including the images, videos,. Additionally, I make graphic designs for internal celebrations like Team Engagement and other events.
-  Though working as an Editor, I also adore web development, and I've been learning since 2022. I aspire to be given the chance to work in the technology sector so that I can pursue my passion.`,
+  about: `I enjoy learning and building new things. Working is more than just a way to make a living for me. However, the enjoyment of the job drives perfection in the work. So the only way to produce great work is to enjoy what you do.`,
 
   experience: [
     {
       name: "Bs'Mart Training Intern",
       location: "MM Mega Market Vietnam",
-      startDate: "Jul 2021",
-      endDate: "Dec 2021",
+      startDate: "06/2021",
+      endDate: "12/2021",
       description: [
         "- In charge of digitizing training materials for Bs'Mart employees",
         "- Supporting L&OD department in implementing internal projects",
@@ -19,8 +18,8 @@ export const info = {
     {
       name: "Digital Project Executive",
       location: "MM Mega Market Vietnam",
-      startDate: "Mar 2022",
-      endDate: "Aug 2022",
+      startDate: "03/2022",
+      endDate: "08/2022",
       description: [
         "- Video production for Elearning systems",
         "- In charge of designing internal publications",
@@ -31,7 +30,7 @@ export const info = {
     {
       name: "Digital Training Executive",
       location: "MM Mega Market Vietnam",
-      startDate: "Aug 2022",
+      startDate: "08/2022",
       endDate: "Present",
       description: [
         "- Video production for Digital Training and Internal Events",
