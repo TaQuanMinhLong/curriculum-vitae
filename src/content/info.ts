@@ -2,7 +2,7 @@ export const info = {
   name: "Ta Quan Minh Long",
   jobDescription: "Designer - Editor - Web Developer",
   about: `I enjoy learning and building new things. Working is more than just a way to make a living for me. However, the enjoyment of the job drives perfection in the work. So the only way to produce great work is to enjoy what you do.`,
-
+  baseUrl: "https://cv-git-master-taquanminhlong.vercel.app/",
   experience: [
     {
       name: "Bs'Mart Training Intern",
