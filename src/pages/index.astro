@@ -6,6 +6,7 @@ import Section from "~/components/Section.astro";
 import Header from "~/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import { info } from "~/content/info";
+import Skill from "~/components/Skill.astro";
 ---
 
 <style>
@@ -47,6 +48,12 @@ import { info } from "~/content/info";
         </Section>
         <Section title="Work Experience">
           {info.experience.map(($) => <Experience experience={$} />)}
+        </Section>
+        <Section title="Design & Edit Skills">
+          {info.editor_skills.map(($) => <Skill skill={$} />)}
+        </Section>
+        <Section title="Web Development Skills">
+          {info.dev_skills.map(($) => <Skill skill={$} />)}
         </Section>
       </article>
     </div>

@@ -19,3 +19,8 @@ export type ExperienceTypes = {
   endDate: string;
   description: string[];
 };
+
+export type SkillTypes = {
+  label: string;
+  value: number;
+};

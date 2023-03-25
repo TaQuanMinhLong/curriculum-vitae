@@ -69,14 +69,66 @@ export const info = {
     },
   ],
 
-  socialMedia: {
-    facebook: "https://www.facebook.com/taquanminhlong.382",
-    twitter: "https://twitter.com/TaQuanMinhLong",
-    github: "https://github.com/TaQuanMinhLong",
-    email: "tqml2013@gmail.com",
-    linkedin: "https://www.linkedin.com/in/taquanminhlong/",
-  },
+  editor_skills: [
+    { label: "Adobe Photoshop", value: 88 },
+    { label: "Adobe Illustrator", value: 85 },
+    { label: "Adobe Audition", value: 80 },
+    { label: "Adobe After Effects", value: 65 },
+    { label: "Figma", value: 60 },
+  ],
 
+  dev_skills: [
+    { label: "HTML", value: 95 },
+    { label: "CSS", value: 85 },
+    { label: "Javascript", value: 80 },
+    { label: "Typescript", value: 80 },
+  ],
+
+  techs: {
+    frontend: [
+      {
+        label: "UI Library",
+        techs: [
+          { label: "React JS", href: "https://beta.es.reactjs.org" },
+          { label: "Solid JS", href: "https://www.solidjs.com" },
+        ],
+      },
+      {
+        label: "Styles & Components",
+        techs: [
+          { label: "Tailwind CSS", href: "https://tailwindcss.com" },
+          { label: "SCSS", href: "https://sass-lang.com" },
+          { label: "Mantine UI", href: "https://mantine.dev" },
+          { label: "Material UI", href: "https://mui.com" },
+        ],
+      },
+    ],
+    backend: [
+      {
+        label: "Node JS",
+        techs: [
+          { label: "Express JS", href: "https://expressjs.com" },
+          { label: "tRPC", href: "https://trpc.io" },
+        ],
+      },
+      {
+        label: "Database",
+        techs: [
+          { label: "Prisma ORM", href: "https://www.prisma.io/" },
+          { label: "Supabase", href: "https://supabase.com" },
+          { label: "PlanetScale", href: "https://planetscale.com" },
+          { label: "MongoDB", href: "https://www.mongodb.com" },
+        ],
+      },
+    ],
+    frameworks: [
+      { label: "Remix", href: "https://remix.run" },
+      { label: "Next JS", href: "https://nextjs.org" },
+      { label: "SolidStart", href: "https://start.solidjs.com" },
+      { label: "QwikCity", href: "https://qwik.builder.io" },
+      { label: "Nest JS", href: "https://nestjs.com" },
+    ],
+  },
   projects: [
     {
       title: "MMVN Internal Survey",
