@@ -95,51 +95,53 @@ export const info = {
     { label: "Typescript", value: 80 },
   ],
 
-  techs: {
-    frontend: [
-      {
-        label: "UI Library",
-        techs: [
-          { label: "React JS", href: "https://beta.es.reactjs.org" },
-          { label: "Solid JS", href: "https://www.solidjs.com" },
-        ],
-      },
-      {
-        label: "Styles & Components",
-        techs: [
-          { label: "Tailwind CSS", href: "https://tailwindcss.com" },
-          { label: "SCSS", href: "https://sass-lang.com" },
-          { label: "Mantine UI", href: "https://mantine.dev" },
-          { label: "Material UI", href: "https://mui.com" },
-        ],
-      },
-    ],
-    backend: [
-      {
-        label: "Node JS",
-        techs: [
-          { label: "Express JS", href: "https://expressjs.com" },
-          { label: "tRPC", href: "https://trpc.io" },
-        ],
-      },
-      {
-        label: "Database",
-        techs: [
-          { label: "Prisma ORM", href: "https://www.prisma.io/" },
-          { label: "Supabase", href: "https://supabase.com" },
-          { label: "PlanetScale", href: "https://planetscale.com" },
-          { label: "MongoDB", href: "https://www.mongodb.com" },
-        ],
-      },
-    ],
-    frameworks: [
-      { label: "Remix", href: "https://remix.run" },
-      { label: "Next JS", href: "https://nextjs.org" },
-      { label: "SolidStart", href: "https://start.solidjs.com" },
-      { label: "QwikCity", href: "https://qwik.builder.io" },
-      { label: "Nest JS", href: "https://nestjs.com" },
-    ],
-  },
+  techs: [
+    {
+      label: "UI Library",
+      techs: [
+        { icon: "logos:react", href: "https://beta.es.reactjs.org" },
+        { icon: "logos:solidjs-icon", href: "https://www.solidjs.com" },
+      ],
+    },
+    {
+      label: "Styles & Components",
+      techs: [
+        { icon: "logos:tailwindcss-icon", href: "https://tailwindcss.com" },
+        { icon: "logos:sass", href: "https://sass-lang.com" },
+        { icon: "mantine-icon", href: "https://mantine.dev" },
+        { icon: "logos:material-ui", href: "https://mui.com" },
+      ],
+    },
+    {
+      label: "Node JS",
+      techs: [
+        { icon: "expressjs-icon", href: "https://expressjs.com" },
+        { icon: "trpc-icon", href: "https://trpc.io" },
+      ],
+    },
+    {
+      label: "Database",
+      techs: [
+        {
+          icon: "vscode-icons:file-type-light-prisma",
+          href: "https://www.prisma.io/",
+        },
+        { icon: "supabase-icon", href: "https://supabase.com" },
+        { icon: "planetscale-icon", href: "https://planetscale.com" },
+        { icon: "mongodb-icon", href: "https://www.mongodb.com" },
+      ],
+    },
+    {
+      label: "Framework",
+      techs: [
+        { icon: "logos:remix-icon", href: "https://remix.run" },
+        { icon: "logos:nextjs-icon", href: "https://nextjs.org" },
+        { icon: "logos:solidjs", href: "https://start.solidjs.com" },
+        { icon: "qwik-icon", href: "https://qwik.builder.io" },
+        { icon: "logos:nestjs", href: "https://nestjs.com" },
+      ],
+    },
+  ],
   projects: [
     {
       title: "MMVN Internal Survey",

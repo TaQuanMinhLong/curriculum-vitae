@@ -8,6 +8,7 @@ import Header from "~/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Skill from "~/components/Skill.astro";
 import { info } from "~/content/info";
+import { Icon } from "astro-icon";
 ---
 
 <style is:global>
@@ -54,6 +55,22 @@ import { info } from "~/content/info";
         </Section>
         <Section title="Web Development Skills">
           {info.dev_skills.map(($) => <Skill skill={$} />)}
+        </Section>
+        <Section title="Tech Stacks">
+          {
+            info.techs.map(($) => (
+              <div class="flex flex-col gap-3">
+                <h3 class="font-semibold">{$.label}</h3>
+                <ul class="flex gap-4">
+                  {$.techs.map(($$) => (
+                    <li class="rounded-lg bg-neutral-50 p-3 shadow-sm">
+                      <Icon height={30} width={30} name={$$.icon} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          }
         </Section>
       </article>
     </div>
