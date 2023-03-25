@@ -25,3 +25,11 @@ export type SkillTypes = {
   label: string;
   value: number;
 };
+
+export type TechTypes = {
+  label: string;
+  techs: {
+    icon: string;
+    href: string;
+  }[];
+};

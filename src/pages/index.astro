@@ -7,8 +7,8 @@ import Section from "~/components/Section.astro";
 import Header from "~/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Skill from "~/components/Skill.astro";
+import Tech from "~/components/Tech.astro";
 import { info } from "~/content/info";
-import { Icon } from "astro-icon";
 ---
 
 <style is:global>
@@ -34,7 +34,7 @@ import { Icon } from "astro-icon";
         </h3>
         {info.education.map(($) => <Education education={$} />)}
       </section>
-      <section id="contact" class="flex flex-col gap-3">
+      <section id="contact" class="flex flex-col gap-4">
         {info.contact.map(($) => <Contact contact={$} />)}
       </section>
     </aside>
@@ -45,7 +45,9 @@ import { Icon } from "astro-icon";
         class="flex flex-col gap-8 px-8 py-6 lg:px-16 lg:py-12 text-dark"
       >
         <Section title="About me">
-          <p class="text-justify text-lg font-medium">{info.about}</p>
+          <p class="text-justify text-md font-medium lg:text-lg">
+            {info.about}
+          </p>
         </Section>
         <Section class="gap-4" title="Work Experience">
           {info.experience.map(($) => <Experience experience={$} />)}
@@ -57,20 +59,7 @@ import { Icon } from "astro-icon";
           {info.dev_skills.map(($) => <Skill skill={$} />)}
         </Section>
         <Section title="Tech Stacks">
-          {
-            info.techs.map(($) => (
-              <div class="flex flex-col gap-3">
-                <h3 class="font-semibold">{$.label}</h3>
-                <ul class="flex gap-4">
-                  {$.techs.map(($$) => (
-                    <li class="rounded-lg bg-neutral-50 p-3 shadow-sm">
-                      <Icon height={30} width={30} name={$$.icon} />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))
-          }
+          {info.techs.map(($) => <Tech tech={$} />)}
         </Section>
       </article>
     </div>

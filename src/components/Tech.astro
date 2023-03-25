@@ -1,0 +1,24 @@
+---
+import { Icon } from "astro-icon";
+import type { TechTypes } from "~/types";
+
+interface Props {
+  tech: TechTypes;
+}
+const { tech } = Astro.props;
+---
+
+<div class="flex flex-col gap-3">
+  <h3 class="font-semibold">{tech.label}</h3>
+  <ul class="flex gap-4">
+    {
+      tech.techs.map(($$) => (
+        <li class="rounded-lg bg-neutral-50 p-3 shadow-sm transition-all hover:bg-white hover:shadow-md">
+          <a href={$$.href} target="_blank">
+            <Icon height={30} width={30} name={$$.icon} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

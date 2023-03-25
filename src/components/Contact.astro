@@ -8,24 +8,16 @@ interface Props {
 const { contact } = Astro.props;
 ---
 
-<div class="flex flex-col">
+<div class="flex flex-col gap-1">
   <div class="flex">
     <span class="min-w-[58px] bg-primary-medium"></span>
     <h4 class="text-md flex-grow bg-dark px-4 py-1 font-medium tracking-wider">
       {contact.label}
     </h4>
   </div>
-  {
-    (
-      <h5 class="ml-[74px] text-xs">
-        {contact.href ? (
-          <a href={contact.href} target="_blank">
-            {contact.content}
-          </a>
-        ) : (
-          contact.content
-        )}
-      </h5>
-    )
-  }
+  <h5 class="ml-[74px] text-xs">
+    <a href={contact.href} target="_blank" id={contact.content}>
+      {contact.content}
+    </a>
+  </h5>
 </div>
