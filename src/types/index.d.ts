@@ -2,6 +2,7 @@ export type ContactTypes = {
   label: string;
   content: string;
   href?: string;
+  icon: string;
 };
 
 export type EducationTypes = {

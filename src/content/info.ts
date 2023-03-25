@@ -41,21 +41,32 @@ export const info = {
   ],
 
   contact: [
-    { label: "Phone", content: "+84 34 6262 749" },
-    { label: "Email", content: "tqml2013@gmail.com" },
+    {
+      label: "Phone",
+      content: "+84 34 6262 749",
+      icon: "fa-solid fa-phone",
+    },
+    {
+      label: "Email",
+      content: "tqml2013@gmail.com",
+      icon: "fa-solid fa-envelope",
+    },
     {
       label: "Facebook",
       content: "fb.com/taquanminhlong.382",
       href: "https://www.facebook.com/taquanminhlong.382",
+      icon: "fa-brands fa-square-facebook",
     },
     {
       label: "LinkedIn",
       content: "linkedin.com/in/taquanminhlong",
       href: "https://www.linkedin.com/in/taquanminhlong",
+      icon: "fa-brands fa-linkedin",
     },
     {
       label: "Address",
       content: `82/14/8B Nguyen Xi Street, Ward 26, Binh Thanh District, Ho Chi Minh City, Vietnam`,
+      icon: "fa-solid fa-location-dot",
     },
   ],
 

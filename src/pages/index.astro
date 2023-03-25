@@ -1,33 +1,30 @@
 ---
+import MobileHeader from "~/components/MobileHeader.astro";
 import Experience from "~/components/Experience.astro";
 import Education from "~/components/Education.astro";
 import Contact from "~/components/Contact.astro";
 import Section from "~/components/Section.astro";
 import Header from "~/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
-import { info } from "~/content/info";
 import Skill from "~/components/Skill.astro";
+import { info } from "~/content/info";
 ---
 
-<style>
+<style is:global>
   #profile-avatar {
-    background: url(https://res.cloudinary.com/dtend0jkk/image/upload/v1679675893/profile_hpvbmo.jpg)
-      no-repeat;
-    background-position: 10% 50%;
+    background-image: url(https://res.cloudinary.com/dtend0jkk/image/upload/v1679675893/profile_hpvbmo.jpg);
+    background-repeat: no-repeat;
     background-size: 150%;
-    width: 100%;
-    aspect-ratio: 760/912;
   }
 </style>
 
 <Layout title={`${info.name} - CV`}>
-  <main
-    class="relative m-12 grid w-full max-w-[1000px] grid-cols-1-2 overflow-hidden rounded-sm bg-white shadow-paper"
-  >
+  <main class="flex md:m-12 w-full max-w-[1000px] bg-white md:shadow-paper">
     <aside
-      class="relative flex min-w-[300px] flex-col gap-11 bg-primary-dark pb-16 text-white"
+      class="hidden md:flex min-w-[300px] flex-col gap-11 bg-primary-dark pb-16 text-white"
     >
-      <div id="profile-avatar"></div>
+      <div id="profile-avatar" class="aspect-[760/912] w-full bg-[10%_50%]">
+      </div>
       <section id="education" class="ml-10">
         <h3
           class="border-b-[3px] border-b-primary-light pb-4 text-xl font-semibold uppercase tracking-wider"
@@ -41,12 +38,15 @@ import Skill from "~/components/Skill.astro";
       </section>
     </aside>
     <div class="relative bg-white">
+      <MobileHeader />
       <Header />
-      <article class="flex flex-col gap-8 px-16 py-12 text-dark">
+      <article
+        class="flex flex-col gap-8 px-8 py-6 lg:px-16 lg:py-12 text-dark"
+      >
         <Section title="About me">
           <p class="text-justify text-lg font-medium">{info.about}</p>
         </Section>
-        <Section title="Work Experience">
+        <Section class="gap-4" title="Work Experience">
           {info.experience.map(($) => <Experience experience={$} />)}
         </Section>
         <Section title="Design & Edit Skills">
